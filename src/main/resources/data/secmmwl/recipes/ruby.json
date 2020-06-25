@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "secmmwl:ruby_block" }
+  ],
+
+  "result": { "item": "secmmwl:ruby", "count": 9 }
+}
