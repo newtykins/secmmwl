@@ -1,11 +1,16 @@
 {
   "item.secmmwl.ruby": "Ruby",
+  "block.secmmwl.ruby_block": "Block of Ruby",
+  "block.secmmwl.ruby_ore": "Ruby Ore",
 
   "item.secmmwl.ruby_helmet": "Ruby Helmet",
   "item.secmmwl.ruby_chestplate": "Ruby Chestplate",
   "item.secmmwl.ruby_leggings": "Ruby Leggings",
   "item.secmmwl.ruby_boots": "Ruby Boots",
 
-  "block.secmmwl.ruby_block": "Block of Ruby",
-  "block.secmmwl.ruby_ore": "Ruby Ore"
+  "item.secmmwl.ruby_sword": "Ruby Sword",
+  "item.secmmwl.ruby_shovel": "Ruby Shovel",
+  "item.secmmwl.ruby_pickaxe": "Ruby Pickaxe",
+  "item.secmmwl.ruby_axe": "Ruby Axe",
+  "item.secmmwl.ruby_hoe": "Ruby Hoe"
 }

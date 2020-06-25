@@ -4,10 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
@@ -20,6 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import newt.secmmwl.lists.ArmourMaterialList;
 import newt.secmmwl.lists.BlockList;
 import newt.secmmwl.lists.ItemList;
+import newt.secmmwl.lists.ToolMaterialList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -56,6 +54,7 @@ public class Main
      */
     private void setup(final FMLCommonSetupEvent event)
     {
+        // TODO: Ore Generation
         logger.info("Setup method completed!");
     }
 
@@ -90,10 +89,15 @@ public class Main
                             ItemList.ruby_helmet = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_helmet")),
                             ItemList.ruby_chestplate = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_chestplate")),
                             ItemList.ruby_leggings = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_leggings")),
-                            ItemList.ruby_boots = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_boots"))
+                            ItemList.ruby_boots = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_boots")),
 
-                            // TODO: Tools
-                  );
+                            // Tools
+                            ItemList.ruby_sword = new SwordItem(ToolMaterialList.ruby, 0, 0.75f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_sword")),
+                            ItemList.ruby_pickaxe = new PickaxeItem(ToolMaterialList.ruby, -2, 0.5f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_pickaxe")),
+                            ItemList.ruby_shovel = new ShovelItem(ToolMaterialList.ruby, -2.5f, 0.5f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_shovel")),
+                            ItemList.ruby_axe = new AxeItem(ToolMaterialList.ruby, -2, 0.5f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_axe")),
+                            ItemList.ruby_hoe = new HoeItem(ToolMaterialList.ruby, 5, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_hoe"))
+                    );
             logger.info("All items registered!");
         }
 

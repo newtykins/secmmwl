@@ -12,4 +12,10 @@ public class ItemList {
     public static Item ruby_chestplate;
     public static Item ruby_leggings;
     public static Item ruby_boots;
+
+    public static Item ruby_sword;
+    public static Item ruby_shovel;
+    public static Item ruby_pickaxe;
+    public static Item ruby_axe;
+    public static Item ruby_hoe;
 }
