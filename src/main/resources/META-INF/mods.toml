@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[31,)"
 issueTrackerURL="https://github.com/newtykins/secmmwl/issues"
-logoFile="cowocaine.png"
+logoFile="logo.png"
 
 [[mods]]
 modId="secmmwl" #mandatory

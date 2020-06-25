@@ -1,5 +1,11 @@
 {
   "item.secmmwl.ruby": "Ruby",
-  "block.secmmwl.ruby_block": "Ruby Block",
+
+  "item.secmmwl.ruby_helmet": "Ruby Helmet",
+  "item.secmmwl.ruby_chestplate": "Ruby Chestplate",
+  "item.secmmwl.ruby_leggings": "Ruby Leggings",
+  "item.secmmwl.ruby_boots": "Ruby Boots",
+
+  "block.secmmwl.ruby_block": "Block of Ruby",
   "block.secmmwl.ruby_ore": "Ruby Ore"
 }

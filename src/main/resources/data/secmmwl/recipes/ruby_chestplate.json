@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R R",
+    "RRR",
+    "RRR"
+  ],
+
+  "key": {
+    "R": { "item": "secmmwl:ruby" }
+  },
+
+  "result": { "item": "secmmwl:ruby_chestplate" }
+}

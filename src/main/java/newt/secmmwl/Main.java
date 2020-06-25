@@ -3,7 +3,10 @@ package newt.secmmwl;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,11 +17,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import newt.secmmwl.lists.ArmourMaterialList;
 import newt.secmmwl.lists.BlockList;
 import newt.secmmwl.lists.ItemList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import net.minecraft.item.Item;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("secmmwl")
@@ -76,10 +79,20 @@ public class Main
         public static void registerItems(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll
                     (
-                            // Rubies
+                            // Materials
                             ItemList.ruby = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("ruby")),
+
+                            // Block Items
                             ItemList.ruby_ore = new BlockItem(BlockList.ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_ore")),
-                            ItemList.ruby_block = new BlockItem(BlockList.ruby_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_block"))
+                            ItemList.ruby_block = new BlockItem(BlockList.ruby_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_block")),
+
+                            // Armour
+                            ItemList.ruby_helmet = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_helmet")),
+                            ItemList.ruby_chestplate = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_chestplate")),
+                            ItemList.ruby_leggings = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_leggings")),
+                            ItemList.ruby_boots = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_boots"))
+
+                            // TODO: Tools
                   );
             logger.info("All items registered!");
         }

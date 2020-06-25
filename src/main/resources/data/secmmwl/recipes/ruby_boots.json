@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "R R",
+    "R R"
+  ],
+
+  "key": {
+    "R": { "item": "secmmwl:ruby" }
+  },
+
+  "result": { "item": "secmmwl:ruby_boots" }
+}
