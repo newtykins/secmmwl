@@ -1,6 +1,7 @@
 modLoader="javafml"
 loaderVersion="[31,)"
 issueTrackerURL="https://github.com/newtykins/secmmwl/issues"
+logoFile="cowocaine.png"
 
 [[mods]]
 modId="secmmwl" #mandatory
@@ -8,12 +9,12 @@ version="${file.jarVersion}"
 displayName="Super Epic Cool Minecraft Mod (With Lasers)"
 # updateJSONURL="http://myurl.me/"
 # displayURL="http://example.com/"
-# logoFile="examplemod.png"
 credits="Created by newt and NTB"
 authors="newt, NTB"
 
 description='''
 A very super epic cool minecraft mod. Yes, it has lasers.
+LAZORS!!!
 '''
 
 [[dependencies.secmmwl]]
