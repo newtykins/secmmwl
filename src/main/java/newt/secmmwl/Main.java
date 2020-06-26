@@ -18,6 +18,7 @@ import newt.secmmwl.lists.ArmourMaterialList;
 import newt.secmmwl.lists.BlockList;
 import newt.secmmwl.lists.ItemList;
 import newt.secmmwl.lists.ToolMaterialList;
+import newt.secmmwl.world.OreGeneration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -54,7 +55,7 @@ public class Main
      */
     private void setup(final FMLCommonSetupEvent event)
     {
-        // TODO: Ore Generation
+        OreGeneration.generateOre();
         logger.info("Setup method completed!");
     }
 

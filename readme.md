@@ -6,4 +6,4 @@ It is currently in its first stages of development, and therefore doesn't yet ac
 
 ## Features
 
-- None! :D
+- Rubies, Ruby Tools, and Ruby Armour!
