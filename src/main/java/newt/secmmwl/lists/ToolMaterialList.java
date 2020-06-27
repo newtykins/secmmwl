@@ -2,10 +2,12 @@ package newt.secmmwl.lists;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier {
-    ruby(8.0f, 25f, 2031, 4, 20, ItemList.ruby);
+    ruby(8.0f, 25f, 2031, 4, 20, ItemList.ruby),
+    emerald(7.0f, 22f, 1450, 3, 25, Items.EMERALD);
 
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;

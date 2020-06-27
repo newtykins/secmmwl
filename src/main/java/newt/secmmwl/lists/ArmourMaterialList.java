@@ -3,15 +3,18 @@ package newt.secmmwl.lists;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import newt.secmmwl.Main;
 
 public enum ArmourMaterialList implements IArmorMaterial {
-    ruby("ruby", 625, new int[] {9, 11, 13, 10}, 20, ItemList.ruby, "item.armor.equip_diamond", 0.0f);
+    // boots, leggings, chestplate, helmet
+    ruby("ruby", 550, new int[]{4, 7, 9, 4}, 12, ItemList.ruby, "item.armor.equip_diamond", 3.0f),
+    emerald("emerald", 535, new int[]{3, 6, 8, 3}, 20, Items.EMERALD, "item.armor.equip_diamond", 2.0f);
 
-    private static final int[] max_damage_array = new int[] {13, 15, 16, 11};
+    private static final int[] max_damage_array = new int[]{13, 15, 16, 11};
     private String name, equipSound;
     private int durability, enchantability;
     private Item repairItem;
@@ -35,7 +38,7 @@ public enum ArmourMaterialList implements IArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlotType slot) {
-        return max_damage_array[slot.getIndex()] *  this.durability;
+        return max_damage_array[slot.getIndex()] * this.durability;
     }
 
     @Override

@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" EE",
+		" SE",
+		" S "
+	],
+	
+	"key": {
+		"E": { "item": "minecraft:emerald" },
+		"S": { "item": "minecraft:stick" }
+	},
+	
+	"result": { "item": "secmmwl:emerald_axe" }
+}

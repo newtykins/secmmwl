@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" E ",
+		" S ",
+		" S "
+	],
+	
+	"key": {
+		"E": { "item": "minecraft:emerald" },
+		"S": { "item": "minecraft:stick" }
+	},
+	
+	"result": { "item": "secmmwl:emerald_shovel" }
+}

@@ -27,4 +27,6 @@ forge*changelog.txt
 # floo
 .floo
 .flooginore
+
+# logs
 *.log

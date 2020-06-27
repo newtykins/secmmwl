@@ -18,4 +18,16 @@ public class ItemList {
     public static Item ruby_pickaxe;
     public static Item ruby_axe;
     public static Item ruby_hoe;
+
+    // emerald tools and armour
+    public static Item emerald_helmet;
+    public static Item emerald_chestplate;
+    public static Item emerald_leggings;
+    public static Item emerald_boots;
+
+    public static Item emerald_sword;
+    public static Item emerald_shovel;
+    public static Item emerald_pickaxe;
+    public static Item emerald_axe;
+    public static Item emerald_hoe;
 }

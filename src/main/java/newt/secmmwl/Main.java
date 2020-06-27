@@ -44,7 +44,7 @@ public class Main
         FMLJavaModLoadingContext
                 .get()
                 .getModEventBus()
-                .addListener(this::clientRegisteries);
+                .addListener(this::clientRegistries);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -63,8 +63,8 @@ public class Main
      * Register the client.
      * @param event
      */
-    private void clientRegisteries(final FMLClientSetupEvent event) {
-        logger.info("Client registeries method completed!");
+    private void clientRegistries(final FMLClientSetupEvent event) {
+        logger.info("Client registries method completed!");
     }
 
     /**
@@ -79,25 +79,44 @@ public class Main
         public static void registerItems(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll
                     (
-                            // Materials
+                            /* Materials */
                             ItemList.ruby = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("ruby")),
 
-                            // Block Items
+                            /* Block Items */
+
+                            // Ruby
                             ItemList.ruby_ore = new BlockItem(BlockList.ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_ore")),
                             ItemList.ruby_block = new BlockItem(BlockList.ruby_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_block")),
 
-                            // Armour
+                            /* Armour */
+
+                            // Ruby
                             ItemList.ruby_helmet = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_helmet")),
                             ItemList.ruby_chestplate = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_chestplate")),
                             ItemList.ruby_leggings = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_leggings")),
                             ItemList.ruby_boots = new ArmorItem(ArmourMaterialList.ruby, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("ruby_boots")),
 
-                            // Tools
-                            ItemList.ruby_sword = new SwordItem(ToolMaterialList.ruby, 0, 0.75f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_sword")),
-                            ItemList.ruby_pickaxe = new PickaxeItem(ToolMaterialList.ruby, -2, 0.5f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_pickaxe")),
-                            ItemList.ruby_shovel = new ShovelItem(ToolMaterialList.ruby, -2.5f, 0.5f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_shovel")),
-                            ItemList.ruby_axe = new AxeItem(ToolMaterialList.ruby, -2, 0.5f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_axe")),
-                            ItemList.ruby_hoe = new HoeItem(ToolMaterialList.ruby, 5, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_hoe"))
+                            // Emerald
+                            ItemList.emerald_helmet = new ArmorItem(ArmourMaterialList.emerald, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("emerald_helmet")),
+                            ItemList.emerald_chestplate = new ArmorItem(ArmourMaterialList.emerald, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("emerald_chestplate")),
+                            ItemList.emerald_leggings = new ArmorItem(ArmourMaterialList.emerald, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("emerald_leggings")),
+                            ItemList.emerald_boots = new ArmorItem(ArmourMaterialList.emerald, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("emerald_boots")),
+
+                            /* Tools */
+
+                            // Ruby
+                            ItemList.ruby_sword = new SwordItem(ToolMaterialList.ruby, -1, -2.4f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_sword")),
+                            ItemList.ruby_pickaxe = new PickaxeItem(ToolMaterialList.ruby, -3, -2.8f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_pickaxe")),
+                            ItemList.ruby_shovel = new ShovelItem(ToolMaterialList.ruby, -2.5f, -3.0f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_shovel")),
+                            ItemList.ruby_axe = new AxeItem(ToolMaterialList.ruby, 1, -3.0f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_axe")),
+                            ItemList.ruby_hoe = new HoeItem(ToolMaterialList.ruby, 5, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("ruby_hoe")),
+
+                            // Emerald
+                            ItemList.emerald_sword = new SwordItem(ToolMaterialList.emerald, -1, -2.4f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("emerald_sword")),
+                            ItemList.emerald_pickaxe = new PickaxeItem(ToolMaterialList.emerald, -3, -2.8f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("emerald_pickaxe")),
+                            ItemList.emerald_shovel = new ShovelItem(ToolMaterialList.emerald, -2.5f, -3.0f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("emerald_shovel")),
+                            ItemList.emerald_axe = new AxeItem(ToolMaterialList.emerald, 1, -3.0f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("emerald_axe")),
+                            ItemList.emerald_hoe = new HoeItem(ToolMaterialList.emerald, 5, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("emerald_hoe"))
                     );
             logger.info("All items registered!");
         }
