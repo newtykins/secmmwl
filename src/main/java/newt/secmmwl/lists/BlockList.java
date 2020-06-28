@@ -7,4 +7,7 @@ public class BlockList
     // Rubies
     public static Block ruby_ore;
     public static Block ruby_block;
+
+    // tin
+    public static Block tin_ore;
 }

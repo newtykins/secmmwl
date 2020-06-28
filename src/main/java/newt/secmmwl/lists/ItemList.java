@@ -30,4 +30,8 @@ public class ItemList {
     public static Item emerald_pickaxe;
     public static Item emerald_axe;
     public static Item emerald_hoe;
+
+    // tin
+    public static Item tin_ingot;
+    public static Item tin_ore;
 }

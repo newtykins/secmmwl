@@ -23,5 +23,8 @@
   "item.secmmwl.emerald_shovel": "Emerald Shovel",
   "item.secmmwl.emerald_pickaxe": "Emerald Pickaxe",
   "item.secmmwl.emerald_axe": "Emerald Axe",
-  "item.secmmwl.emerald_hoe": "Emerald Hoe"
+  "item.secmmwl.emerald_hoe": "Emerald Hoe",
+
+  "item.secmmwl.tin_ingot": "Tin Ingot",
+  "block.secmmwl.tin_ore": "Tin Ore"
 }

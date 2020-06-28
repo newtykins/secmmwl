@@ -81,12 +81,16 @@ public class Main
                     (
                             /* Materials */
                             ItemList.ruby = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("ruby")),
+                            ItemList.tin_ingot = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("tin_ingot")),
 
                             /* Block Items */
 
                             // Ruby
                             ItemList.ruby_ore = new BlockItem(BlockList.ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_ore")),
                             ItemList.ruby_block = new BlockItem(BlockList.ruby_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("ruby_block")),
+
+                            // Tin
+                            ItemList.tin_ore = new BlockItem(BlockList.tin_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("tin_ore")),
 
                             /* Armour */
 
@@ -130,7 +134,10 @@ public class Main
                     (
                             // rubies
                             BlockList.ruby_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName(location("ruby_ore")),
-                            BlockList.ruby_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 30.0f).sound(SoundType.METAL).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName(location("ruby_block"))
+                            BlockList.ruby_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 30.0f).sound(SoundType.METAL).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName(location("ruby_block")),
+
+                            // tin
+                            BlockList.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("tin_ore"))
                     );
             logger.info("All blocks registered!");
         }
