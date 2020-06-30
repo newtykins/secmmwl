@@ -26,5 +26,8 @@
   "item.secmmwl.emerald_hoe": "Emerald Hoe",
 
   "item.secmmwl.tin_ingot": "Tin Ingot",
-  "block.secmmwl.tin_ore": "Tin Ore"
+  "block.secmmwl.tin_ore": "Tin Ore",
+
+  "item.secmmwl.copper_ingot": "Copper Ingot",
+  "block.secmmwl.copper_ore": "Copper Ore"
 }

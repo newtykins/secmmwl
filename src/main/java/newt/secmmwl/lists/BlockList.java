@@ -10,4 +10,7 @@ public class BlockList
 
     // tin
     public static Block tin_ore;
+
+    // copper
+    public static Block copper_ore;
 }

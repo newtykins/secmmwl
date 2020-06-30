@@ -34,4 +34,8 @@ public class ItemList {
     // tin
     public static Item tin_ingot;
     public static Item tin_ore;
+
+    // copper
+    public static Item copper_ingot;
+    public static Item copper_ore;
 }

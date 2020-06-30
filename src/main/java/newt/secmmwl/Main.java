@@ -82,6 +82,7 @@ public class Main
                             /* Materials */
                             ItemList.ruby = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("ruby")),
                             ItemList.tin_ingot = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("tin_ingot")),
+                            ItemList.copper_ingot = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(location("copper_ingot")),
 
                             /* Block Items */
 
@@ -91,6 +92,9 @@ public class Main
 
                             // Tin
                             ItemList.tin_ore = new BlockItem(BlockList.tin_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("tin_ore")),
+
+                            // Copper
+                            ItemList.copper_ore = new BlockItem(BlockList.copper_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("copper_ore")),
 
                             /* Armour */
 
@@ -137,7 +141,10 @@ public class Main
                             BlockList.ruby_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 30.0f).sound(SoundType.METAL).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName(location("ruby_block")),
 
                             // tin
-                            BlockList.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("tin_ore"))
+                            BlockList.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("tin_ore")),
+
+                            // copper
+                            BlockList.copper_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("copper_ore"))
                     );
             logger.info("All blocks registered!");
         }

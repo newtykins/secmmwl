@@ -31,14 +31,18 @@ public class OreGeneration {
         }
 
         BiomeManager.getBiomes(BiomeManager.BiomeType.WARM).forEach((BiomeManager.BiomeEntry biomeEntry) -> {
-            // Tin Ore Generation
-            ConfiguredPlacement tinConfig = Placement.COUNT_RANGE
+            // Tin and Copper Ore Generation
+            ConfiguredPlacement tinCopperConfig = Placement.COUNT_RANGE
                 // Chunk Count, MinHeight, MaxHeightBase, MaxHeight
                 .configure(new CountRangeConfig(12, 0, 5, 40));
             
             biomeEntry.biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
                 .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.tin_ore.getDefaultState(), 7))
-                .withPlacement(tinConfig));
+                .withPlacement(tinCopperConfig));
+
+            biomeEntry.biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
+                .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.copper_ore.getDefaultState(), 7))
+                .withPlacement(tinCopperConfig));
         });
     }
 }
